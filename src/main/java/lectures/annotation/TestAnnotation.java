@@ -1,4 +1,4 @@
-package lectures.com.goit.javadev5.annotation;
+package lectures.annotation;
 
 import java.lang.reflect.Field;
 

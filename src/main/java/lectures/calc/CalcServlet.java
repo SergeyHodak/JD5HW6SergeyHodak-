@@ -1,4 +1,4 @@
-package lectures.com.goit.javadev5.calc;
+package lectures.calc;
 
 import com.google.gson.Gson;
 

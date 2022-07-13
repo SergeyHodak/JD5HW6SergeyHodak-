@@ -1,4 +1,4 @@
-package lectures.com.goit.javadev5;
+package lectures;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
