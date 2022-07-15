@@ -5,20 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d935605-b04a-4f71-8061-4521d068373e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/lectures/forum/command/Command.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lectures/com/goit/javadev5/HelloWorldServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lectures/HelloWorldServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lectures/com/goit/javadev5/RedirectServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lectures/RedirectServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lectures/com/goit/javadev5/annotation/Calculated.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lectures/annotation/Calculated.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lectures/com/goit/javadev5/annotation/TestAnnotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lectures/annotation/TestAnnotation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lectures/com/goit/javadev5/auth/AuthFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lectures/auth/AuthFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lectures/com/goit/javadev5/auth/ExtendHeaderFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lectures/auth/ExtendHeaderFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lectures/com/goit/javadev5/calc/CalcRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lectures/calc/CalcRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lectures/com/goit/javadev5/calc/CalcResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lectures/calc/CalcResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lectures/com/goit/javadev5/calc/CalcService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lectures/calc/CalcService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lectures/com/goit/javadev5/calc/CalcServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lectures/calc/CalcServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lectures/com/goit/javadev5/test_form/test-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lectures/test_form/test-form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lectures/HelloWorldServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lectures/HelloWorldServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lectures/RedirectServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lectures/RedirectServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lectures/auth/AuthFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lectures/auth/AuthFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lectures/auth/ExtendHeaderFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lectures/auth/ExtendHeaderFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lectures/calc/CalcServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lectures/calc/CalcServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +42,9 @@
     <option name="groupByToolId" value="true" />
   </component>
   <component name="ProjectId" id="2Bl3oTRjRTj8Z8kfiTKxfqH7qEI" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -58,7 +53,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/JavaSerge/JD5HW6SergeyHodak/src/main/webapp&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/JavaSerge/JD5HW6SergeyHodak/src/main/java&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.3&quot;,
@@ -66,15 +61,34 @@
   }
 }</component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\JavaSerge\JD5HW6SergeyHodak\src\main\java\lectures" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JavaSerge\JD5HW6SergeyHodak\src\main\java" />
+      <recent name="D:\JavaSerge\JD5HW6SergeyHodak\src\main" />
       <recent name="D:\JavaSerge\JD5HW6SergeyHodak" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\JavaSerge\JD5HW6SergeyHodak\src\main\java\mvc\view\templates" />
+      <recent name="D:\JavaSerge\JD5HW6SergeyHodak\src\main\java\mvc\view" />
+      <recent name="D:\JavaSerge\JD5HW6SergeyHodak\src\main\resources\db\migration" />
+      <recent name="D:\JavaSerge\JD5HW6SergeyHodak\src\main\java\storage" />
+      <recent name="D:\JavaSerge\JD5HW6SergeyHodak\src\main\java\lectures" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="web_pages" />
+      <recent name="mvc.controller" />
+      <recent name="mvc.model" />
+      <recent name="prefs" />
       <recent name="lectures.thymeleaf" />
     </key>
   </component>
   <component name="RunManager" selected="Smart Tomcat.Local Tomcad">
+    <configuration name="App" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="App" />
+      <module name="JD5HW6SergeyHodak.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestAnnotation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lectures.com.goit.javadev5.annotation.TestAnnotation" />
       <module name="JD5HW6SergeyHodak.main" />
@@ -92,7 +106,9 @@
       <option name="adminPort" value="8005" />
       <option name="contextPath" value="/app" />
       <option name="docBase" value="$PROJECT_DIR$/src/main/webapp" />
-      <option name="envOptions" />
+      <option name="envOptions">
+        <map />
+      </option>
       <option name="passParentEnvironmentVariables" value="true" />
       <option name="port" value="8080" />
       <option name="tomcatInfo">
@@ -106,9 +122,122 @@
       <option name="vmOptions" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
+        <option name="RunConfigurationTask" enabled="true" run_configuration_name="App" run_configuration_type="Application" />
       </method>
     </configuration>
     <configuration default="true" type="com.poratu.idea.plugins.tomcat" factoryName="SMART_TOMCAT_FACTORY">
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
       <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
       <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
       <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
@@ -145,6 +274,118 @@
       <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
       <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
       <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
+      <log_file alias="start tomcat" path="$PROJECT_DIR$/../tomcat/bin/startup.sh" />
       <option name="passParentEnvironmentVariables" value="true" />
       <option name="port" value="8080" />
       <option name="tomcatInfo">
@@ -160,6 +401,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.App" />
+      <item itemvalue="Application.TestAnnotation" />
+      <item itemvalue="Smart Tomcat.Local Tomcad" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.TestAnnotation" />

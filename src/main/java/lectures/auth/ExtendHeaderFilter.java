@@ -10,11 +10,11 @@ import java.io.IOException;
 
 //@WebFilter("/api/*")
 public class ExtendHeaderFilter extends HttpFilter {
-//    @Override
-//    protected void doFilter(HttpServletRequest req,
-//                            HttpServletResponse res,
-//                            FilterChain chain) throws IOException, ServletException {
-//        res.setHeader("HelloHeader", "HelloHeaderValue");
-//        chain.doFilter(req, res);
-//    }
+    @Override
+    protected void doFilter(HttpServletRequest req,
+                            HttpServletResponse res,
+                            FilterChain chain) throws IOException, ServletException {
+        res.setHeader("HelloHeader", "HelloHeaderValue");
+        chain.doFilter(req, res);
+    }
 }
