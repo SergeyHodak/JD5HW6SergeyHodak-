@@ -1,6 +1,6 @@
 package mvc.controller;
 
-import lectures.forum.command.Command;
+import mvc.model.*;
 import org.thymeleaf.TemplateEngine;
 
 import javax.servlet.http.HttpServletRequest;
@@ -10,20 +10,21 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class CommandService {
-//    private Map<String, Command> commands;
-//
-//    public CommandService() {
-//        commands = new HashMap<>();
-//
-////        commands.put("GET /app/forum", new GetMessagesCommand());
-////        commands.put("POST /app/forum/delete", new DeleteMessageCommand());
-////        commands.put("POST /app/forum", new AddMessageCommand());
-//    }
-//
-//    public void process(HttpServletRequest req, HttpServletResponse resp, TemplateEngine engine) throws IOException {
-//        String requestUri = req.getRequestURI();
-//        String commandKey = req.getMethod() + " " + requestUri;
-//
-//        commands.get(commandKey).process(req, resp, engine);
-//    }
+    private final Map<String, Command> commands;
+
+    public CommandService() {
+        commands = new HashMap<>();
+
+        commands.put("GET /app/table", new TableSelection());
+        commands.put("GET /app/table/company", new CompanyPage());
+        commands.put("GET /app/table/company/create", new CompanyCreateGet());
+        commands.put("POST /app/table/company/create", new CompanyCreatePost());
+    }
+
+    public void process(HttpServletRequest req, HttpServletResponse resp, TemplateEngine engine) throws IOException {
+        String requestUri = req.getRequestURI();
+        String commandKey = req.getMethod() + " " + requestUri;
+
+        commands.get(commandKey).process(req, resp, engine);
+    }
 }

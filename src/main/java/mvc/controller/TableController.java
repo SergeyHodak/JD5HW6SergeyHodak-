@@ -10,12 +10,11 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.LinkedHashMap;
-import java.util.Map;
 
 @WebServlet("/table/*")
 public class TableController extends HttpServlet {
     private TemplateEngine engine;
+    private CommandService commandService;
 
     @Override
     public void init() throws ServletException {
@@ -28,5 +27,21 @@ public class TableController extends HttpServlet {
         resolver.setOrder(engine.getTemplateResolvers().size());
         resolver.setCacheable(false);
         engine.addTemplateResolver(resolver);
+
+        commandService = new CommandService();
+    }
+
+    @Override
+    protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        commandService.process(req, resp, engine);
+    }
+
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        resp.setContentType("text/html");
+
+        Context simpleContext = new Context();
+        engine.process("start", simpleContext, resp.getWriter());
+        resp.getWriter().close();
     }
 }
