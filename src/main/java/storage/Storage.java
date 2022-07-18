@@ -16,6 +16,7 @@ public class Storage {
         try {
             String connectionUrl = new Prefs().getString(Prefs.DB_JDBC_CONNECTION_URL);
             connection = DriverManager.getConnection(connectionUrl);
+            System.out.println("connection = " + connection);
         } catch (Exception ex) {
             ex.printStackTrace();
         }

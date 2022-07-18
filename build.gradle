@@ -23,5 +23,5 @@ dependencies {
     implementation 'org.flywaydb:flyway-core:8.5.11'
 
     // https://mvnrepository.com/artifact/com.h2database/h2
-    implementation 'com.h2database:h2:2.1.210'
+    implementation group: 'com.h2database', name: 'h2', version: '2.1.210'
 }
