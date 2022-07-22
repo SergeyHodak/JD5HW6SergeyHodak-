@@ -3,10 +3,10 @@ package storage;
 import org.flywaydb.core.Flyway;
 
 public class DatabaseInitService {
-    public void initDb(String connectionUrl) {
+    public void initDb(String dbUrl, String dbUser, String dbPass) {
         Flyway flyway = Flyway
                 .configure()
-                .dataSource(connectionUrl, null, null)
+                .dataSource(dbUrl, dbUser, dbPass)
                 .load();
         flyway.migrate();
     }

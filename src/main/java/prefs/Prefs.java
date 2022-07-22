@@ -12,6 +12,8 @@ import java.util.Map;
 public class Prefs {
     public static final String DEFAULT_PREFS_FILENAME = "prefs.json";
     public static final String DB_JDBC_CONNECTION_URL = "dbUrl";
+    public static final String DB_JDBC_USERNAME = "dbUser";
+    public static final String DB_JDBC_USER_PASSWORD = "dbPass";
 
     private Map<String, Object> prefs = new HashMap<>();
 

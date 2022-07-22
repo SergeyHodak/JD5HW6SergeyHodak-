@@ -20,8 +20,10 @@ dependencies {
     implementation 'org.thymeleaf:thymeleaf:3.1.0.M2'
 
     // https://mvnrepository.com/artifact/org.flywaydb/flyway-core
-    implementation 'org.flywaydb:flyway-core:8.5.11'
+    implementation 'org.flywaydb:flyway-core:8.0.0'
+    //implementation 'org.flywaydb:flyway-sqlserver:8.5.11'
+    //testImplementation 'org.flywaydb.flyway-test-extensions:flyway-spring-test:7.0.0'
 
-    // https://mvnrepository.com/artifact/com.h2database/h2
-    implementation group: 'com.h2database', name: 'h2', version: '2.1.210'
+    // https://mvnrepository.com/artifact/mysql/mysql-connector-java
+    implementation 'mysql:mysql-connector-java:8.0.29'
 }

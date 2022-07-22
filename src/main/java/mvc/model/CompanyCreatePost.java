@@ -2,10 +2,9 @@ package mvc.model;
 
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.Context;
-import storage.Storage;
+import prefs.Prefs;
 import tables.company.Company;
 import tables.company.CompanyDaoService;
-import tomcat_starter.TomcatStarter;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -20,8 +19,11 @@ public class CompanyCreatePost implements Command {
 
     public CompanyCreatePost() {
         try {
-            DriverManager.registerDriver(new org.h2.Driver());
-            connection = DriverManager.getConnection("jdbc:h2:./test");
+            String url = "jdbc:mysql://127.0.0.1:3306/jd5hw6";
+            String username = "root";
+            String password = "12345";
+            DriverManager.registerDriver(new com.mysql.jdbc.Driver());
+            connection = DriverManager.getConnection(url, username, password);
         } catch (Exception e) {
             System.out.println("Class CompanyCreatePost: " + e.getMessage());
             connection = null;

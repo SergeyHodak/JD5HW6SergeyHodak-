@@ -1,14 +1,14 @@
 import prefs.Prefs;
 import storage.DatabaseInitService;
-import tables.BasicContentOfTables;
 
 import java.sql.SQLException;
 
 public class App {
     public static void main(String[] args) throws SQLException {
-        new DatabaseInitService().initDb(new Prefs().getString(Prefs.DB_JDBC_CONNECTION_URL));
-
-        //TODO Uncomment to populate tables with test data!
-//        new BasicContentOfTables().toFill();
+        Prefs prefs = new Prefs();
+        String url = prefs.getString(Prefs.DB_JDBC_CONNECTION_URL);
+        String username = prefs.getString(Prefs.DB_JDBC_USERNAME);
+        String password = prefs.getString(Prefs.DB_JDBC_USER_PASSWORD);
+        new DatabaseInitService().initDb(url, username, password);
     }
 }
