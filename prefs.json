@@ -1,6 +1,0 @@
-{
-  "dbUrl": "jdbc:mysql://127.0.0.1:3306/jd5hw6",
-  "dbUser": "root",
-  "dbPass": "12345",
-  "testDbUrl": "jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1"
-}

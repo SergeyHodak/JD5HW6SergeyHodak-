@@ -15,7 +15,11 @@
         <button type="submit">Create</button>
     </form>
     <br>
-    <h4 th:text="'Result: ' + ${companyId}"></h4>
-    <h4 th:text="'Error: ' + ${errorMessage}"></h4>
+    <h4 style="color:#00ff00" th:if="${companyId.length()} != 0" th:text="'Result: ' + ${companyId}"></h4>
+    <h4 style="color:#ff0000" th:if="${errorMessage.length()} != 0" th:text="'Error: ' + ${errorMessage}"></h4>
+    <br>
+    <form action="/app/table/company" method="get">
+        <button type="submit">back</button>
+    </form>
 </body>
 </html>

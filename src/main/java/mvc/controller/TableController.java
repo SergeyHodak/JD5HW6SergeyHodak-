@@ -3,16 +3,12 @@ package mvc.controller;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.Context;
 import org.thymeleaf.templateresolver.FileTemplateResolver;
-import storage.Storage;
 
-import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.sql.Connection;
-import java.sql.DriverManager;
 
 @WebServlet("/table/*")
 public class TableController extends HttpServlet {
@@ -20,7 +16,7 @@ public class TableController extends HttpServlet {
     private CommandService commandService;
 
     @Override
-    public void init() throws ServletException {
+    public void init() {
         engine = new TemplateEngine();
 
         FileTemplateResolver resolver = new FileTemplateResolver();
@@ -35,12 +31,12 @@ public class TableController extends HttpServlet {
     }
 
     @Override
-    protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void service(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         commandService.process(req, resp, engine);
     }
 
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         resp.setContentType("text/html");
 
         Context simpleContext = new Context();
