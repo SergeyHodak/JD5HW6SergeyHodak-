@@ -8,44 +8,49 @@
     <title>Document</title>
 </head>
 <body>
+    <style>
+        .frame table, .frame table td {
+            border: 1px solid black;
+        }
+    </style>
     <h2>Fill out the form to get an appointment about company.</h2>
     <form  action="/app/table/company/get-by-id" method="post">
         <p>Id = <input type="text" value="" name="setId" id="setId"></p>
         <button type="submit">Get</button>
     </form>
     <br>
-
-    <style>
-        .frame table, .frame table td {
-            border: 1px solid black;
-        }
-    </style>
-
-    <div class="frame" th:if="false">
+    <div class="frame" th:if="${companyId} != ''">
         <table>
             <colgroup style="background-color: bisque;">
                 <col style="background-color: #c4daff;">
                 <col>
             </colgroup>
             <thead>
-                <tr>
-                    <td>id</td>
-                    <td>name</td>
-                    <td>description</td>
-                </tr>
-            </thead>
-
-            <tbody>
             <tr>
-                <td>Ячейка 1</td>
-                <td>Ячейка 2</td>
-                <td>Ячейка 3</td>
+                <td>id</td>
+                <td>name</td>
+                <td>description</td>
             </tr>
+            </thead>
+            <tbody>
+            <div th:if="${companyId} == 'null'">
+                <tr>
+                    <td style="color:#ff0000" th:text="${companyId}"></td>
+                    <td style="color:#ff0000" th:text="${companyName}"></td>
+                    <td style="color:#ff0000" th:text="${companyDescription}"></td>
+                </tr>
+            </div>
+            <div th:if="${companyId} != 'null'">
+                <tr>
+                    <td th:text="${companyId}"></td>
+                    <td th:text="${companyName}"></td>
+                    <td th:text="${companyDescription}"></td>
+                </tr>
+            </div>
             </tbody>
         </table>
     </div>
-
-    <h4 style="color:#ff0000" th:if="${errorMessage.length()} != 0" th:text="'Error: ' + ${errorMessage}"></h4>
+    <h4 style="color:#ff0000" th:if="${errorMessage} != ''" th:text="'Error: ' + ${errorMessage}"></h4>
     <br>
     <form action="/app/table/company" method="get">
         <button type="submit">back</button>

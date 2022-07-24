@@ -26,31 +26,35 @@ public class CompanyGetById implements Command {
 
             Context simpleContext = new Context(
                     req.getLocale(),
-                    Map.of("company", "", "errorMessage", "")
+                    Map.of("companyId", "",
+                            "companyName", "",
+                            "companyDescription", "",
+                            "errorMessage", "")
             );
             engine.process("company-get-by-id", simpleContext, resp.getWriter());
             resp.getWriter().close();
             return;
         }
         String id = req.getParameter("setId");
-
         Company company = new Company();
         String error = "";
 
         try {
             CompanyDaoService companyDaoService = new CompanyDaoService(connection);
-
             company = companyDaoService.getById(Long.parseLong(id));
         } catch (Exception e) {
-            error = e.toString();
+            error = e.getMessage();
         }
 
         resp.setContentType("text/html");
         Context simpleContext = new Context(
                 req.getLocale(),
-                Map.of("company", company, "errorMessage", error)
+                Map.of("companyId", company.getId()  == 0 ? "null" : company.getId(),
+                        "companyName", company.getName() == null ? "null" : company.getName(),
+                        "companyDescription", company.getDescription() == null ? "null" : company.getDescription(),
+                        "errorMessage", error)
         );
-
+        System.out.println("company=" + company + ", errorMessage=" + error);
         engine.process("company-get-by-id", simpleContext, resp.getWriter());
         resp.getWriter().close();
     }

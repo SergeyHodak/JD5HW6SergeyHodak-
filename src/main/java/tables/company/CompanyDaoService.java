@@ -1,9 +1,8 @@
 package tables.company;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import prefs.Prefs;
+
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -61,10 +60,10 @@ public class CompanyDaoService {
     public Company getById(long id) throws SQLException {
         getByIdSt.setLong(1, id);
         try (ResultSet rs = getByIdSt.executeQuery()) {
-            if (!rs.next()) {
-                return null;
-            }
             Company result = new Company();
+            if (!rs.next()) {
+                return result;
+            }
             result.setId(id);
             result.setName(rs.getString("name"));
             result.setDescription(rs.getString("description"));
