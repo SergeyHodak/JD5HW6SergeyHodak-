@@ -57,4 +57,8 @@ SET T1.cost = (
         WHERE T3.project_id=T1.id
     )
 )
-WHERE id IN (1, 2, 3);
+WHERE name IN (
+'Artificial intelligence for milling machine',
+'App for simple options',
+'Finding profitable ways to exchange currencies'
+);

@@ -143,19 +143,29 @@ public class ProjectDaoService {
         }
     }
 
-    public void update(Project project) throws SQLException {
-        updateSt.setString(1, project.getName());
-        updateSt.setLong(2, project.getCompanyId());
-        updateSt.setLong(3, project.getCustomerId());
-        updateSt.setDouble(4, project.getCost());
-        updateSt.setString(5, project.getCreationDate().toString());
-        updateSt.setLong(6, project.getId());
-        updateSt.executeUpdate();
+    public String update(Project project) {
+        try {
+            updateSt.setString(1, project.getName());
+            updateSt.setLong(2, project.getCompanyId());
+            updateSt.setLong(3, project.getCustomerId());
+            updateSt.setDouble(4, project.getCost());
+            updateSt.setString(5, project.getCreationDate().toString());
+            updateSt.setLong(6, project.getId());
+            updateSt.executeUpdate();
+            return "true";
+        } catch (SQLException e) {
+            return e.getMessage();
+        }
     }
 
-    public void deleteById(long id) throws SQLException {
-        deleteByIdSt.setLong(1, id);
-        deleteByIdSt.executeUpdate();
+    public String deleteById(long id) {
+        try {
+            deleteByIdSt.setLong(1, id);
+            deleteByIdSt.executeUpdate();
+            return "true";
+        } catch (SQLException e) {
+            return e.getMessage();
+        }
     }
 
     public double getCostById(long id) throws SQLException {
@@ -170,10 +180,16 @@ public class ProjectDaoService {
         }
     }
 
-    public void updateCostById(long id) throws SQLException {
-        updateCostByIdSt.setLong(1, id);
-        updateCostByIdSt.executeUpdate();
+    public String updateCostById(long id) {
+        try {
+            updateCostByIdSt.setLong(1, id);
+            updateCostByIdSt.executeUpdate();
+            return "true";
+        } catch (SQLException e) {
+            return e.getMessage();
+        }
     }
+
     public List<Developer> getDevelopersByProjectId(long id) throws SQLException {
         getDevelopersByProjectIdSt.setLong(1, id);
         try (ResultSet rs = getDevelopersByProjectIdSt.executeQuery()) {

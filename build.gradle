@@ -21,8 +21,6 @@ dependencies {
 
     // https://mvnrepository.com/artifact/org.flywaydb/flyway-core
     implementation 'org.flywaydb:flyway-core:8.0.0'
-    //implementation 'org.flywaydb:flyway-sqlserver:8.5.11'
-    //testImplementation 'org.flywaydb.flyway-test-extensions:flyway-spring-test:7.0.0'
 
     // https://mvnrepository.com/artifact/mysql/mysql-connector-java
     implementation 'mysql:mysql-connector-java:8.0.29'

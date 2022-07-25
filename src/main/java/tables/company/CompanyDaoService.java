@@ -89,15 +89,25 @@ public class CompanyDaoService {
         }
     }
 
-    public void update(Company company) throws SQLException {
-        updateSt.setString(1, company.getName());
-        updateSt.setString(2, company.getDescription());
-        updateSt.setLong(3, company.getId());
-        updateSt.executeUpdate();
+    public String update(Company company) {
+        try {
+            updateSt.setString(1, company.getName());
+            updateSt.setString(2, company.getDescription());
+            updateSt.setLong(3, company.getId());
+            updateSt.executeUpdate();
+            return "true";
+        } catch (SQLException e) {
+            return e.getMessage();
+        }
     }
 
-    public void deleteById(long id) throws SQLException {
-        deleteByIdSt.setLong(1, id);
-        deleteByIdSt.executeUpdate();
+    public String deleteById(long id) {
+        try {
+            deleteByIdSt.setLong(1, id);
+            deleteByIdSt.executeUpdate();
+            return "true";
+        } catch (SQLException e) {
+            return e.getMessage();
+        }
     }
 }

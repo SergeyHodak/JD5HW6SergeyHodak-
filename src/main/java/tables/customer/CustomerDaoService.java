@@ -93,16 +93,26 @@ public class CustomerDaoService {
         }
     }
 
-    public void update(Customer customer) throws SQLException {
-        updateSt.setString(1, customer.getFirstName());
-        updateSt.setString(2, customer.getSecondName());
-        updateSt.setInt(3, customer.getAge());
-        updateSt.setLong(4, customer.getId());
-        updateSt.executeUpdate();
+    public String update(Customer customer) {
+        try {
+            updateSt.setString(1, customer.getFirstName());
+            updateSt.setString(2, customer.getSecondName());
+            updateSt.setInt(3, customer.getAge());
+            updateSt.setLong(4, customer.getId());
+            updateSt.executeUpdate();
+            return "true";
+        } catch (SQLException e) {
+            return e.getMessage();
+        }
     }
 
-    public void deleteById(long id) throws SQLException {
-        deleteByIdSt.setLong(1, id);
-        deleteByIdSt.executeUpdate();
+    public String deleteById(long id) {
+        try {
+            deleteByIdSt.setLong(1, id);
+            deleteByIdSt.executeUpdate();
+            return "true";
+        } catch (SQLException e) {
+            return e.getMessage();
+        }
     }
 }

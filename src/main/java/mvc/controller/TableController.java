@@ -20,7 +20,7 @@ public class TableController extends HttpServlet {
         engine = new TemplateEngine();
 
         FileTemplateResolver resolver = new FileTemplateResolver();
-        resolver.setPrefix("D:\\JavaSerge\\JD5HW6SergeyHodak\\src\\main\\java\\mvc\\view\\templates\\");
+        resolver.setPrefix("D:\\JavaSerge\\JD5HW6SergeyHodak\\src\\main\\java\\mvc\\view\\");
         resolver.setSuffix(".html");
         resolver.setTemplateMode("HTML5");
         resolver.setOrder(engine.getTemplateResolvers().size());
