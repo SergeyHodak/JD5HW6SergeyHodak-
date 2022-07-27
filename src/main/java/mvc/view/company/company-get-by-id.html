@@ -19,7 +19,7 @@
         <button type="submit">Get</button>
     </form>
     <br>
-    <div class="frame" th:if="${companyId} != ''">
+    <div class="frame" th:if="${company} != ''">
         <table>
             <colgroup style="background-color: bisque;">
                 <col style="background-color: #c4daff;">
@@ -33,18 +33,18 @@
             </tr>
             </thead>
             <tbody>
-            <div th:if="${companyId} == 'null'">
+            <div th:if="${company} == 'null'">
                 <tr>
-                    <td style="color:#ff0000" th:text="${companyId}"></td>
-                    <td style="color:#ff0000" th:text="${companyName}"></td>
-                    <td style="color:#ff0000" th:text="${companyDescription}"></td>
+                    <td style="color:#ff0000">null</td>
+                    <td style="color:#ff0000">null</td>
+                    <td style="color:#ff0000">null</td>
                 </tr>
             </div>
-            <div th:if="${companyId} != 'null'">
+            <div th:if="${company} != 'null'">
                 <tr>
-                    <td th:text="${companyId}"></td>
-                    <td th:text="${companyName}"></td>
-                    <td th:text="${companyDescription}"></td>
+                    <td th:text="${company.id}"></td>
+                    <td th:text="${company.name}"></td>
+                    <td th:text="${company.description}"></td>
                 </tr>
             </div>
             </tbody>

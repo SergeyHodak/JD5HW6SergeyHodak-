@@ -3,7 +3,6 @@ package mvc.model.project;
 import mvc.model.Command;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.Context;
-import tables.project.ProjectDaoService;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

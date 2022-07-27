@@ -3,8 +3,6 @@ package mvc.model.company;
 import mvc.model.Command;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.Context;
-import tables.company.Company;
-import tables.company.CompanyDaoService;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -27,17 +25,14 @@ public class CompanyGetById implements Command {
 
             Context simpleContext = new Context(
                     req.getLocale(),
-                    Map.of("companyId", "",
-                            "companyName", "",
-                            "companyDescription", "",
-                            "errorMessage", "")
+                    Map.of("company", "", "errorMessage", "")
             );
             engine.process("company\\company-get-by-id", simpleContext, resp.getWriter());
             resp.getWriter().close();
             return;
         }
         String id = req.getParameter("setId");
-        Company company = new Company();
+        Company company = null;
         String error = "";
 
         try {
@@ -50,10 +45,8 @@ public class CompanyGetById implements Command {
         resp.setContentType("text/html");
         Context simpleContext = new Context(
                 req.getLocale(),
-                Map.of("companyId", company.getId()  == 0 ? "null" : company.getId(),
-                        "companyName", company.getName() == null ? "null" : company.getName(),
-                        "companyDescription", company.getDescription() == null ? "null" : company.getDescription(),
-                        "errorMessage", error)
+                Map.of("company", company == null ? "null" :
+                        company.getId() == 0 ? "null" : company, "errorMessage", error)
         );
         engine.process("company\\company-get-by-id", simpleContext, resp.getWriter());
         resp.getWriter().close();

@@ -33,10 +33,11 @@
             <tbody>
             <div th:if="${cost} == 0">
                 <tr>
-                    <td style="color:#ff0000" th:text="${cost}">. Use the "UpdateCostById" method.</td>
+                    <td style="color:#ff0000" th:text="${cost}"></td>
+                    <h4>Use the "UpdateCostById" method.</h4>
                 </tr>
             </div>
-            <div th:if="${cost} != 'null'">
+            <div th:if="${cost} != 0">
                 <tr>
                     <td th:text="${cost}"></td>
                 </tr>

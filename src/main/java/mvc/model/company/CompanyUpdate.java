@@ -3,8 +3,6 @@ package mvc.model.company;
 import mvc.model.Command;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.Context;
-import tables.company.Company;
-import tables.company.CompanyDaoService;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

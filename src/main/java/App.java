@@ -1,5 +1,5 @@
+import mvc.controller.DatabaseInitService;
 import prefs.Prefs;
-import storage.DatabaseInitService;
 
 public class App {
     public static void main(String[] args) {
