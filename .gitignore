@@ -1,9 +1,3 @@
-#bild.gradle
-#gradle
-#gradlew
-#gradlew.bat
-#settings.gradle
-#src/
 /.gradle/
 /.idea/
 /build/
