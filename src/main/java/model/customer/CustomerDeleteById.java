@@ -27,7 +27,7 @@ public class CustomerDeleteById implements Command {
                     req.getLocale(),
                     Map.of("errorMessage", "")
             );
-            engine.process("customer\\customer-delete-by-id", simpleContext, resp.getWriter());
+            engine.process("customer/customer-delete-by-id", simpleContext, resp.getWriter());
             resp.getWriter().close();
             return;
         }
@@ -48,7 +48,7 @@ public class CustomerDeleteById implements Command {
                 Map.of("errorMessage", error)
         );
 
-        engine.process("customer\\customer-delete-by-id", simpleContext, resp.getWriter());
+        engine.process("customer/customer-delete-by-id", simpleContext, resp.getWriter());
         resp.getWriter().close();
     }
 }

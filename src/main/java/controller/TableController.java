@@ -24,11 +24,10 @@ public class TableController extends HttpServlet {
 
         engine = new TemplateEngine();
 
-        File urlProjectClass = new File(Objects.requireNonNull(this.getClass().getResource("")).getPath());
-        String urlProject = urlProjectClass.toString()
-                .replace("\\build\\classes\\java\\main\\controller", "");
+        String urlProject = getServletContext().getRealPath("").replace('\\', '/');
+
         FileTemplateResolver resolver = new FileTemplateResolver();
-        resolver.setPrefix(urlProject + "/src/main/webapp/view/");
+        resolver.setPrefix(urlProject + "view/");
         resolver.setSuffix(".html");
         resolver.setTemplateMode("HTML5");
         resolver.setOrder(engine.getTemplateResolvers().size());

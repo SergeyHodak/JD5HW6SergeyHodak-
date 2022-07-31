@@ -27,7 +27,7 @@ public class ProjectUpdateCostById implements Command {
                     req.getLocale(),
                     Map.of("errorMessage", "")
             );
-            engine.process("project\\project-update-cost-by-id", simpleContext, resp.getWriter());
+            engine.process("project/project-update-cost-by-id", simpleContext, resp.getWriter());
             resp.getWriter().close();
             return;
         }
@@ -48,7 +48,7 @@ public class ProjectUpdateCostById implements Command {
                 Map.of("errorMessage", error)
         );
 
-        engine.process("project\\project-update-cost-by-id", simpleContext, resp.getWriter());
+        engine.process("project/project-update-cost-by-id", simpleContext, resp.getWriter());
         resp.getWriter().close();
     }
 }

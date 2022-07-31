@@ -27,7 +27,7 @@ public class DeveloperGetDevelopersByDepartment implements Command {
                     req.getLocale(),
                     Map.of("developers", "null", "errorMessage", "")
             );
-            engine.process("developer\\developer-get-developers-by-department", simpleContext, resp.getWriter());
+            engine.process("developer/developer-get-developers-by-department", simpleContext, resp.getWriter());
             resp.getWriter().close();
             return;
         }
@@ -47,7 +47,7 @@ public class DeveloperGetDevelopersByDepartment implements Command {
                 req.getLocale(),
                 Map.of("developers", developers == null ? "null" : developers, "errorMessage", error)
         );
-        engine.process("developer\\developer-get-developers-by-department", simpleContext, resp.getWriter());
+        engine.process("developer/developer-get-developers-by-department", simpleContext, resp.getWriter());
         resp.getWriter().close();
     }
 }

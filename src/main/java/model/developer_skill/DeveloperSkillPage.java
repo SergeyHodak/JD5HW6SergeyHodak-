@@ -14,7 +14,7 @@ public class DeveloperSkillPage implements Command {
         resp.setContentType("text/html");
 
         Context simpleContext = new Context();
-        engine.process("developer_skill\\developer-skill", simpleContext, resp.getWriter());
+        engine.process("developer_skill/developer-skill", simpleContext, resp.getWriter());
         resp.getWriter().close();
     }
 }

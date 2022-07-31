@@ -27,7 +27,7 @@ public class ProjectDeveloperDelete implements Command {
                     req.getLocale(),
                     Map.of("errorMessage", "")
             );
-            engine.process("project_developer\\project-developer-delete", simpleContext, resp.getWriter());
+            engine.process("project_developer/project-developer-delete", simpleContext, resp.getWriter());
             resp.getWriter().close();
             return;
         }
@@ -54,7 +54,7 @@ public class ProjectDeveloperDelete implements Command {
                 Map.of("errorMessage", error)
         );
 
-        engine.process("project_developer\\project-developer-delete", simpleContext, resp.getWriter());
+        engine.process("project_developer/project-developer-delete", simpleContext, resp.getWriter());
         resp.getWriter().close();
     }
 }

@@ -27,7 +27,7 @@ public class ProjectDeveloperExist implements Command {
                     req.getLocale(),
                     Map.of("result", "", "errorMessage", "")
             );
-            engine.process("project_developer\\project-developer-exit", simpleContext, resp.getWriter());
+            engine.process("project_developer/project-developer-exit", simpleContext, resp.getWriter());
             resp.getWriter().close();
             return;
         }
@@ -54,7 +54,7 @@ public class ProjectDeveloperExist implements Command {
                 Map.of("result", result, "errorMessage", error)
         );
 
-        engine.process("project_developer\\project-developer-exit", simpleContext, resp.getWriter());
+        engine.process("project_developer/project-developer-exit", simpleContext, resp.getWriter());
         resp.getWriter().close();
     }
 }

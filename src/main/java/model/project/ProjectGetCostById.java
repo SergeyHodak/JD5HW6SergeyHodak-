@@ -27,7 +27,7 @@ public class ProjectGetCostById implements Command {
                     req.getLocale(),
                     Map.of("cost", "", "errorMessage", "")
             );
-            engine.process("project\\project-get-cost-by-id", simpleContext, resp.getWriter());
+            engine.process("project/project-get-cost-by-id", simpleContext, resp.getWriter());
             resp.getWriter().close();
             return;
         }
@@ -47,7 +47,7 @@ public class ProjectGetCostById implements Command {
                 req.getLocale(),
                 Map.of("cost", cost, "errorMessage", error)
         );
-        engine.process("project\\project-get-cost-by-id", simpleContext, resp.getWriter());
+        engine.process("project/project-get-cost-by-id", simpleContext, resp.getWriter());
         resp.getWriter().close();
     }
 }

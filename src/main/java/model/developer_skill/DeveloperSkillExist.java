@@ -27,7 +27,7 @@ public class DeveloperSkillExist implements Command {
                     req.getLocale(),
                     Map.of("result", "", "errorMessage", "")
             );
-            engine.process("developer_skill\\developer-skill-exit", simpleContext, resp.getWriter());
+            engine.process("developer_skill/developer-skill-exit", simpleContext, resp.getWriter());
             resp.getWriter().close();
             return;
         }
@@ -54,7 +54,7 @@ public class DeveloperSkillExist implements Command {
                 Map.of("result", result, "errorMessage", error)
         );
 
-        engine.process("developer_skill\\developer-skill-exit", simpleContext, resp.getWriter());
+        engine.process("developer_skill/developer-skill-exit", simpleContext, resp.getWriter());
         resp.getWriter().close();
     }
 }

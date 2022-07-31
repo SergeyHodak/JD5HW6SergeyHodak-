@@ -27,7 +27,7 @@ public class CompanyGetById implements Command {
                     req.getLocale(),
                     Map.of("company", "", "errorMessage", "")
             );
-            engine.process("company\\company-get-by-id", simpleContext, resp.getWriter());
+            engine.process("company/company-get-by-id", simpleContext, resp.getWriter());
             resp.getWriter().close();
             return;
         }
@@ -48,7 +48,7 @@ public class CompanyGetById implements Command {
                 Map.of("company", company == null ? "null" :
                         company.getId() == 0 ? "null" : company, "errorMessage", error)
         );
-        engine.process("company\\company-get-by-id", simpleContext, resp.getWriter());
+        engine.process("company/company-get-by-id", simpleContext, resp.getWriter());
         resp.getWriter().close();
     }
 }

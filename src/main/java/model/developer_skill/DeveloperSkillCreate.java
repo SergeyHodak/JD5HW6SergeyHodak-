@@ -27,7 +27,7 @@ public class DeveloperSkillCreate implements Command {
                     req.getLocale(),
                     Map.of("result", "", "errorMessage", "")
             );
-            engine.process("developer_skill\\developer-skill-create", simpleContext, resp.getWriter());
+            engine.process("developer_skill/developer-skill-create", simpleContext, resp.getWriter());
             resp.getWriter().close();
             return;
         }
@@ -55,7 +55,7 @@ public class DeveloperSkillCreate implements Command {
                 Map.of("result", result, "errorMessage", error)
         );
 
-        engine.process("developer_skill\\developer-skill-create", simpleContext, resp.getWriter());
+        engine.process("developer_skill/developer-skill-create", simpleContext, resp.getWriter());
         resp.getWriter().close();
     }
 }

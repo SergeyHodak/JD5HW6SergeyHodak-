@@ -14,7 +14,7 @@ public class CompanyPage implements Command {
         resp.setContentType("text/html");
 
         Context simpleContext = new Context();
-        engine.process("company\\company", simpleContext, resp.getWriter());
+        engine.process("company/company", simpleContext, resp.getWriter());
         resp.getWriter().close();
     }
 }

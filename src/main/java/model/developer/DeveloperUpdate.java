@@ -27,7 +27,7 @@ public class DeveloperUpdate implements Command {
                     req.getLocale(),
                     Map.of("errorMessage", "")
             );
-            engine.process("developer\\developer-update", simpleContext, resp.getWriter());
+            engine.process("developer/developer-update", simpleContext, resp.getWriter());
             resp.getWriter().close();
             return;
         }
@@ -62,7 +62,7 @@ public class DeveloperUpdate implements Command {
                 Map.of("errorMessage", error)
         );
 
-        engine.process("developer\\developer-update", simpleContext, resp.getWriter());
+        engine.process("developer/developer-update", simpleContext, resp.getWriter());
         resp.getWriter().close();
     }
 }

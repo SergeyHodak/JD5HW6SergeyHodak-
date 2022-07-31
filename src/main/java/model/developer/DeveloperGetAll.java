@@ -29,7 +29,7 @@ public class DeveloperGetAll implements Command {
                     req.getLocale(),
                     Map.of("developers", "null", "errorMessage", "")
             );
-            engine.process("developer\\developer-get-all", simpleContext, resp.getWriter());
+            engine.process("developer/developer-get-all", simpleContext, resp.getWriter());
             resp.getWriter().close();
             return;
         }
@@ -48,7 +48,7 @@ public class DeveloperGetAll implements Command {
                 req.getLocale(),
                 Map.of("developers", developers.size() == 0 ? "null" : developers,"errorMessage", error)
         );
-        engine.process("developer\\developer-get-all", simpleContext, resp.getWriter());
+        engine.process("developer/developer-get-all", simpleContext, resp.getWriter());
         resp.getWriter().close();
     }
 }

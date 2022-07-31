@@ -27,7 +27,7 @@ public class CompanyDeleteById implements Command {
                     req.getLocale(),
                     Map.of("errorMessage", "")
             );
-            engine.process("company\\company-delete-by-id", simpleContext, resp.getWriter());
+            engine.process("company/company-delete-by-id", simpleContext, resp.getWriter());
             resp.getWriter().close();
             return;
         }
@@ -48,7 +48,7 @@ public class CompanyDeleteById implements Command {
                 Map.of("errorMessage", error)
         );
 
-        engine.process("company\\company-delete-by-id", simpleContext, resp.getWriter());
+        engine.process("company/company-delete-by-id", simpleContext, resp.getWriter());
         resp.getWriter().close();
     }
 }

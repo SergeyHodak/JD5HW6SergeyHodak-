@@ -27,7 +27,7 @@ public class CompanyUpdate implements Command {
                     req.getLocale(),
                     Map.of("errorMessage", "")
             );
-            engine.process("company\\company-update", simpleContext, resp.getWriter());
+            engine.process("company/company-update", simpleContext, resp.getWriter());
             resp.getWriter().close();
             return;
         }
@@ -54,7 +54,7 @@ public class CompanyUpdate implements Command {
                 Map.of("errorMessage", error)
         );
 
-        engine.process("company\\company-update", simpleContext, resp.getWriter());
+        engine.process("company/company-update", simpleContext, resp.getWriter());
         resp.getWriter().close();
     }
 }

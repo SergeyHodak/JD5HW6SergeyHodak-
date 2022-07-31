@@ -27,7 +27,7 @@ public class DeveloperSkillDelete implements Command {
                     req.getLocale(),
                     Map.of("errorMessage", "")
             );
-            engine.process("developer_skill\\developer-skill-delete", simpleContext, resp.getWriter());
+            engine.process("developer_skill/developer-skill-delete", simpleContext, resp.getWriter());
             resp.getWriter().close();
             return;
         }
@@ -54,7 +54,7 @@ public class DeveloperSkillDelete implements Command {
                 Map.of("errorMessage", error)
         );
 
-        engine.process("developer_skill\\developer-skill-delete", simpleContext, resp.getWriter());
+        engine.process("developer_skill/developer-skill-delete", simpleContext, resp.getWriter());
         resp.getWriter().close();
     }
 }

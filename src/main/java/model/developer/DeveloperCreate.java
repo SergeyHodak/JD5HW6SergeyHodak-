@@ -27,7 +27,7 @@ public class DeveloperCreate implements Command {
                     req.getLocale(),
                     Map.of("developerId", "", "errorMessage", "")
             );
-            engine.process("developer\\developer-create", simpleContext, resp.getWriter());
+            engine.process("developer/developer-create", simpleContext, resp.getWriter());
             resp.getWriter().close();
             return;
         }
@@ -60,7 +60,7 @@ public class DeveloperCreate implements Command {
                 Map.of("developerId", id, "errorMessage", error)
         );
 
-        engine.process("developer\\developer-create", simpleContext, resp.getWriter());
+        engine.process("developer/developer-create", simpleContext, resp.getWriter());
         resp.getWriter().close();
     }
 }

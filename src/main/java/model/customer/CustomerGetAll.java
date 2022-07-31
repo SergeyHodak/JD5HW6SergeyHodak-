@@ -29,7 +29,7 @@ public class CustomerGetAll implements Command {
                     req.getLocale(),
                     Map.of("customers", "null", "errorMessage", "")
             );
-            engine.process("customer\\customer-get-all", simpleContext, resp.getWriter());
+            engine.process("customer/customer-get-all", simpleContext, resp.getWriter());
             resp.getWriter().close();
             return;
         }
@@ -48,7 +48,7 @@ public class CustomerGetAll implements Command {
                 req.getLocale(),
                 Map.of("customers", customers.size() == 0 ? "null" : customers,"errorMessage", error)
         );
-        engine.process("customer\\customer-get-all", simpleContext, resp.getWriter());
+        engine.process("customer/customer-get-all", simpleContext, resp.getWriter());
         resp.getWriter().close();
     }
 }

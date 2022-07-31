@@ -30,7 +30,7 @@ public class ProjectGetDevelopersByProjectId implements Command {
                     req.getLocale(),
                     Map.of("developers", "null", "errorMessage", "")
             );
-            engine.process("project\\project-get-developers-by-project-id", simpleContext, resp.getWriter());
+            engine.process("project/project-get-developers-by-project-id", simpleContext, resp.getWriter());
             resp.getWriter().close();
             return;
         }
@@ -52,7 +52,7 @@ public class ProjectGetDevelopersByProjectId implements Command {
                 req.getLocale(),
                 Map.of("developers", developers.size() == 0 ? "null" : developers,"errorMessage", error)
         );
-        engine.process("project\\project-get-developers-by-project-id", simpleContext, resp.getWriter());
+        engine.process("project/project-get-developers-by-project-id", simpleContext, resp.getWriter());
         resp.getWriter().close();
     }
 }

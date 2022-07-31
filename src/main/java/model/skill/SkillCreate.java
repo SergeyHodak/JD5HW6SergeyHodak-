@@ -27,7 +27,7 @@ public class SkillCreate implements Command {
                     req.getLocale(),
                     Map.of("skillId", "", "errorMessage", "")
             );
-            engine.process("skill\\skill-create", simpleContext, resp.getWriter());
+            engine.process("skill/skill-create", simpleContext, resp.getWriter());
             resp.getWriter().close();
             return;
         }
@@ -55,7 +55,7 @@ public class SkillCreate implements Command {
                 Map.of("skillId", id, "errorMessage", error)
         );
 
-        engine.process("skill\\skill-create", simpleContext, resp.getWriter());
+        engine.process("skill/skill-create", simpleContext, resp.getWriter());
         resp.getWriter().close();
     }
 }

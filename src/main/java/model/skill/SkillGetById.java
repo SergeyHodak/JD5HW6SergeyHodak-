@@ -27,7 +27,7 @@ public class SkillGetById implements Command {
                     req.getLocale(),
                     Map.of("skill", "", "errorMessage", "")
             );
-            engine.process("skill\\skill-get-by-id", simpleContext, resp.getWriter());
+            engine.process("skill/skill-get-by-id", simpleContext, resp.getWriter());
             resp.getWriter().close();
             return;
         }
@@ -47,7 +47,7 @@ public class SkillGetById implements Command {
                 req.getLocale(),
                 Map.of("skill", skill == null ? "null" : skill, "errorMessage", error)
         );
-        engine.process("skill\\skill-get-by-id", simpleContext, resp.getWriter());
+        engine.process("skill/skill-get-by-id", simpleContext, resp.getWriter());
         resp.getWriter().close();
     }
 }

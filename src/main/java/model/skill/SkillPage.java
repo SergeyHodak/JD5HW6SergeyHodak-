@@ -14,7 +14,7 @@ public class SkillPage implements Command {
         resp.setContentType("text/html");
 
         Context simpleContext = new Context();
-        engine.process("skill\\skill", simpleContext, resp.getWriter());
+        engine.process("skill/skill", simpleContext, resp.getWriter());
         resp.getWriter().close();
     }
 }

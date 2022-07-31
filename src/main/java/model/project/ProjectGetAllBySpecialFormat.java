@@ -29,7 +29,7 @@ public class ProjectGetAllBySpecialFormat implements Command {
                     req.getLocale(),
                     Map.of("projects", "null", "errorMessage", "")
             );
-            engine.process("project\\project-get-all", simpleContext, resp.getWriter());
+            engine.process("project/project-get-all", simpleContext, resp.getWriter());
             resp.getWriter().close();
             return;
         }
@@ -48,7 +48,7 @@ public class ProjectGetAllBySpecialFormat implements Command {
                 req.getLocale(),
                 Map.of("projects", projects.size() == 0 ? "null" : projects,"errorMessage", error)
         );
-        engine.process("project\\project-get-all", simpleContext, resp.getWriter());
+        engine.process("project/project-get-all", simpleContext, resp.getWriter());
         resp.getWriter().close();
     }
 }

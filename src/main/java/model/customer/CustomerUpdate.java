@@ -27,7 +27,7 @@ public class CustomerUpdate implements Command {
                     req.getLocale(),
                     Map.of("errorMessage", "")
             );
-            engine.process("customer\\customer-update", simpleContext, resp.getWriter());
+            engine.process("customer/customer-update", simpleContext, resp.getWriter());
             resp.getWriter().close();
             return;
         }
@@ -58,7 +58,7 @@ public class CustomerUpdate implements Command {
                 Map.of("errorMessage", error)
         );
 
-        engine.process("customer\\customer-update", simpleContext, resp.getWriter());
+        engine.process("customer/customer-update", simpleContext, resp.getWriter());
         resp.getWriter().close();
     }
 }

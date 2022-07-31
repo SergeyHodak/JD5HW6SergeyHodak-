@@ -29,7 +29,7 @@ public class ProjectDeveloperGetAllByDeveloperId implements Command {
                     req.getLocale(),
                     Map.of("projectDevelopers", "null", "errorMessage", "")
             );
-            engine.process("project_developer\\project-developer-get-all-by-developer-id", simpleContext, resp.getWriter());
+            engine.process("project_developer/project-developer-get-all-by-developer-id", simpleContext, resp.getWriter());
             resp.getWriter().close();
             return;
         }
@@ -51,7 +51,7 @@ public class ProjectDeveloperGetAllByDeveloperId implements Command {
                 req.getLocale(),
                 Map.of("projectDevelopers", projectDevelopers.size() == 0 ? "null" : projectDevelopers,"errorMessage", error)
         );
-        engine.process("project_developer\\project-developer-get-all-by-developer-id", simpleContext, resp.getWriter());
+        engine.process("project_developer/project-developer-get-all-by-developer-id", simpleContext, resp.getWriter());
         resp.getWriter().close();
     }
 }

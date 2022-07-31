@@ -27,7 +27,7 @@ public class DeveloperSkillUpdate implements Command {
                     req.getLocale(),
                     Map.of("errorMessage", "")
             );
-            engine.process("developer_skill\\developer-skill-update", simpleContext, resp.getWriter());
+            engine.process("developer_skill/developer-skill-update", simpleContext, resp.getWriter());
             resp.getWriter().close();
             return;
         }
@@ -60,7 +60,7 @@ public class DeveloperSkillUpdate implements Command {
                 Map.of("errorMessage", error)
         );
 
-        engine.process("developer_skill\\developer-skill-update", simpleContext, resp.getWriter());
+        engine.process("developer_skill/developer-skill-update", simpleContext, resp.getWriter());
         resp.getWriter().close();
     }
 }

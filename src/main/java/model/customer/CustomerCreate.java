@@ -27,7 +27,7 @@ public class CustomerCreate implements Command {
                     req.getLocale(),
                     Map.of("customerId", "", "errorMessage", "")
             );
-            engine.process("customer\\customer-create", simpleContext, resp.getWriter());
+            engine.process("customer/customer-create", simpleContext, resp.getWriter());
             resp.getWriter().close();
             return;
         }
@@ -56,7 +56,7 @@ public class CustomerCreate implements Command {
                 Map.of("customerId", id, "errorMessage", error)
         );
 
-        engine.process("customer\\customer-create", simpleContext, resp.getWriter());
+        engine.process("customer/customer-create", simpleContext, resp.getWriter());
         resp.getWriter().close();
     }
 }

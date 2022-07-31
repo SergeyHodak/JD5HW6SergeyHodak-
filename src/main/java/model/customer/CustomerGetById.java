@@ -27,7 +27,7 @@ public class CustomerGetById implements Command {
                     req.getLocale(),
                     Map.of("customer", "", "errorMessage", "")
             );
-            engine.process("customer\\customer-get-by-id", simpleContext, resp.getWriter());
+            engine.process("customer/customer-get-by-id", simpleContext, resp.getWriter());
             resp.getWriter().close();
             return;
         }
@@ -47,7 +47,7 @@ public class CustomerGetById implements Command {
                 req.getLocale(),
                 Map.of("customer", customer == null ? "null" : customer, "errorMessage", error)
         );
-        engine.process("customer\\customer-get-by-id", simpleContext, resp.getWriter());
+        engine.process("customer/customer-get-by-id", simpleContext, resp.getWriter());
         resp.getWriter().close();
     }
 }

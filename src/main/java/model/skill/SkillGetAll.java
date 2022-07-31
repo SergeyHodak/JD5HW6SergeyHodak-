@@ -29,7 +29,7 @@ public class SkillGetAll implements Command {
                     req.getLocale(),
                     Map.of("skills", "null", "errorMessage", "")
             );
-            engine.process("skill\\skill-get-all", simpleContext, resp.getWriter());
+            engine.process("skill/skill-get-all", simpleContext, resp.getWriter());
             resp.getWriter().close();
             return;
         }
@@ -48,7 +48,7 @@ public class SkillGetAll implements Command {
                 req.getLocale(),
                 Map.of("skills", skills.size() == 0 ? "null" : skills,"errorMessage", error)
         );
-        engine.process("skill\\skill-get-all", simpleContext, resp.getWriter());
+        engine.process("skill/skill-get-all", simpleContext, resp.getWriter());
         resp.getWriter().close();
     }
 }

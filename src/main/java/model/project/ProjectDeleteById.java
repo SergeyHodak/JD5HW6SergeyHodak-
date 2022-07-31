@@ -27,7 +27,7 @@ public class ProjectDeleteById implements Command {
                     req.getLocale(),
                     Map.of("errorMessage", "")
             );
-            engine.process("project\\project-delete-by-id", simpleContext, resp.getWriter());
+            engine.process("project/project-delete-by-id", simpleContext, resp.getWriter());
             resp.getWriter().close();
             return;
         }
@@ -48,7 +48,7 @@ public class ProjectDeleteById implements Command {
                 Map.of("errorMessage", error)
         );
 
-        engine.process("project\\project-delete-by-id", simpleContext, resp.getWriter());
+        engine.process("project/project-delete-by-id", simpleContext, resp.getWriter());
         resp.getWriter().close();
     }
 }

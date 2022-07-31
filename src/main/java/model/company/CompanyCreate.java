@@ -27,7 +27,7 @@ public class CompanyCreate implements Command {
                     req.getLocale(),
                     Map.of("companyId", "", "errorMessage", "")
             );
-            engine.process("company\\company-create", simpleContext, resp.getWriter());
+            engine.process("company/company-create", simpleContext, resp.getWriter());
             resp.getWriter().close();
             return;
         }
@@ -54,7 +54,7 @@ public class CompanyCreate implements Command {
                 Map.of("companyId", id, "errorMessage", error)
         );
 
-        engine.process("company\\company-create", simpleContext, resp.getWriter());
+        engine.process("company/company-create", simpleContext, resp.getWriter());
         resp.getWriter().close();
     }
 }

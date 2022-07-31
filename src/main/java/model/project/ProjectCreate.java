@@ -28,7 +28,7 @@ public class ProjectCreate implements Command {
                     req.getLocale(),
                     Map.of("projectId", "", "errorMessage", "")
             );
-            engine.process("project\\project-create", simpleContext, resp.getWriter());
+            engine.process("project/project-create", simpleContext, resp.getWriter());
             resp.getWriter().close();
             return;
         }
@@ -62,7 +62,7 @@ public class ProjectCreate implements Command {
                 Map.of("projectId", id, "errorMessage", error)
         );
 
-        engine.process("project\\project-create", simpleContext, resp.getWriter());
+        engine.process("project/project-create", simpleContext, resp.getWriter());
         resp.getWriter().close();
     }
 }

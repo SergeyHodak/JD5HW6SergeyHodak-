@@ -27,7 +27,7 @@ public class ProjectGetById implements Command {
                     req.getLocale(),
                     Map.of("project", "", "errorMessage", "")
             );
-            engine.process("project\\project-get-by-id", simpleContext, resp.getWriter());
+            engine.process("project/project-get-by-id", simpleContext, resp.getWriter());
             resp.getWriter().close();
             return;
         }
@@ -47,7 +47,7 @@ public class ProjectGetById implements Command {
                 req.getLocale(),
                 Map.of("project", project == null ? "null" : project, "errorMessage", error)
         );
-        engine.process("project\\project-get-by-id", simpleContext, resp.getWriter());
+        engine.process("project/project-get-by-id", simpleContext, resp.getWriter());
         resp.getWriter().close();
     }
 }

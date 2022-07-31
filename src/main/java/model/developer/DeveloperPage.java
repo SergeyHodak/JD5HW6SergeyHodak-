@@ -14,7 +14,7 @@ public class DeveloperPage implements Command {
         resp.setContentType("text/html");
 
         Context simpleContext = new Context();
-        engine.process("developer\\developer", simpleContext, resp.getWriter());
+        engine.process("developer/developer", simpleContext, resp.getWriter());
         resp.getWriter().close();
     }
 }

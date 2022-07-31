@@ -27,7 +27,7 @@ public class DeveloperGetById implements Command {
                     req.getLocale(),
                     Map.of("developer", "", "errorMessage", "")
             );
-            engine.process("developer\\developer-get-by-id", simpleContext, resp.getWriter());
+            engine.process("developer/developer-get-by-id", simpleContext, resp.getWriter());
             resp.getWriter().close();
             return;
         }
@@ -47,7 +47,7 @@ public class DeveloperGetById implements Command {
                 req.getLocale(),
                 Map.of("developer", developer == null ? "null" : developer, "errorMessage", error)
         );
-        engine.process("developer\\developer-get-by-id", simpleContext, resp.getWriter());
+        engine.process("developer/developer-get-by-id", simpleContext, resp.getWriter());
         resp.getWriter().close();
     }
 }

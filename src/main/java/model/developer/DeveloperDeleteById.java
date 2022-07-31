@@ -27,7 +27,7 @@ public class DeveloperDeleteById implements Command {
                     req.getLocale(),
                     Map.of("errorMessage", "")
             );
-            engine.process("developer\\developer-delete-by-id", simpleContext, resp.getWriter());
+            engine.process("developer/developer-delete-by-id", simpleContext, resp.getWriter());
             resp.getWriter().close();
             return;
         }
@@ -48,7 +48,7 @@ public class DeveloperDeleteById implements Command {
                 Map.of("errorMessage", error)
         );
 
-        engine.process("developer\\developer-delete-by-id", simpleContext, resp.getWriter());
+        engine.process("developer/developer-delete-by-id", simpleContext, resp.getWriter());
         resp.getWriter().close();
     }
 }

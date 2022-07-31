@@ -14,7 +14,7 @@ public class CustomerPage  implements Command {
         resp.setContentType("text/html");
 
         Context simpleContext = new Context();
-        engine.process("customer\\customer", simpleContext, resp.getWriter());
+        engine.process("customer/customer", simpleContext, resp.getWriter());
         resp.getWriter().close();
     }
 }

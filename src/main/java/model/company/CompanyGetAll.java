@@ -29,7 +29,7 @@ public class CompanyGetAll implements Command {
                     req.getLocale(),
                     Map.of("companies", "null", "errorMessage", "")
             );
-            engine.process("company\\company-get-all", simpleContext, resp.getWriter());
+            engine.process("company/company-get-all", simpleContext, resp.getWriter());
             resp.getWriter().close();
             return;
         }
@@ -48,7 +48,7 @@ public class CompanyGetAll implements Command {
                 req.getLocale(),
                 Map.of("companies", companies.size() == 0 ? "null" : companies,"errorMessage", error)
         );
-        engine.process("company\\company-get-all", simpleContext, resp.getWriter());
+        engine.process("company/company-get-all", simpleContext, resp.getWriter());
         resp.getWriter().close();
     }
 }

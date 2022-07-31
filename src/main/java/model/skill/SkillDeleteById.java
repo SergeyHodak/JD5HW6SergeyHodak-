@@ -27,7 +27,7 @@ public class SkillDeleteById implements Command {
                     req.getLocale(),
                     Map.of("errorMessage", "")
             );
-            engine.process("skill\\skill-delete-by-id", simpleContext, resp.getWriter());
+            engine.process("skill/skill-delete-by-id", simpleContext, resp.getWriter());
             resp.getWriter().close();
             return;
         }
@@ -48,7 +48,7 @@ public class SkillDeleteById implements Command {
                 Map.of("errorMessage", error)
         );
 
-        engine.process("skill\\skill-delete-by-id", simpleContext, resp.getWriter());
+        engine.process("skill/skill-delete-by-id", simpleContext, resp.getWriter());
         resp.getWriter().close();
     }
 }

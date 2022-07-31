@@ -29,7 +29,7 @@ public class DeveloperSkillGetAll implements Command {
                     req.getLocale(),
                     Map.of("developerSkills", "null", "errorMessage", "")
             );
-            engine.process("developer_skill\\developer-skill-get-all", simpleContext, resp.getWriter());
+            engine.process("developer_skill/developer-skill-get-all", simpleContext, resp.getWriter());
             resp.getWriter().close();
             return;
         }
@@ -48,7 +48,7 @@ public class DeveloperSkillGetAll implements Command {
                 req.getLocale(),
                 Map.of("developerSkills", developerSkills.size() == 0 ? "null" : developerSkills,"errorMessage", error)
         );
-        engine.process("developer_skill\\developer-skill-get-all", simpleContext, resp.getWriter());
+        engine.process("developer_skill/developer-skill-get-all", simpleContext, resp.getWriter());
         resp.getWriter().close();
     }
 }
