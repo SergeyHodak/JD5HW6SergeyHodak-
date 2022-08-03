@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Project getDevelopersByProjectId</title>
 </head>
 <body>
     <style>
@@ -14,7 +14,7 @@
         }
     </style>
     <h2>Enter a project ID to get a list of all the developers in it.</h2>
-    <form  action="/app/table/project/get-developers-by-project-id" method="post">
+    <form  action="/project/get-developers-by-project-id" method="post">
         <p>Id = <input type="text" value="" name="setId" id="setId"></p>
         <button type="submit">getDevelopersByProjectId</button>
     </form>
@@ -49,7 +49,7 @@
     </div>
     <h4 style="color:#ff0000" th:if="${errorMessage} != ''" th:text="'Error: ' + ${errorMessage}"></h4>
     <br>
-    <form action="/app/table/project/get-developers-by-project-id" method="get">
+    <form action="/project/get-developers-by-project-id" method="get">
         <button type="submit">back</button>
     </form>
 </body>

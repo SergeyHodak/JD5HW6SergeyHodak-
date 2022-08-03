@@ -48,19 +48,19 @@ public class DeveloperDaoService {
         );
 
         getDevelopersByDepartmentSt = connection.prepareStatement(
-                "SELECT T1.*\n" +
-                        "FROM developer AS T1\n" +
-                        "JOIN developer_skill AS T2 ON T1.id=T2.developer_id\n" +
-                        "JOIN skill AS T3 ON T2.skill_id=T3.id\n" +
-                        "GROUP BY T3.department, T1.id\n" +
+                "SELECT T1.*" + '\n' +
+                        "FROM developer AS T1" + '\n' +
+                        "JOIN developer_skill AS T2 ON T1.id=T2.developer_id" + '\n' +
+                        "JOIN skill AS T3 ON T2.skill_id=T3.id" + '\n' +
+                        "GROUP BY T3.department, T1.id" + '\n' +
                         "HAVING T3.department = ?"
         );
         getDevelopersBySkillLevelSt = connection.prepareStatement(
-                "SELECT T1.*\n" +
-                        "FROM developer AS T1\n" +
-                        "JOIN developer_skill AS T2 ON T1.id=T2.developer_id\n" +
-                        "JOIN skill AS T3 ON T2.skill_id=T3.id\n" +
-                        "GROUP BY T3.skill_level , T1.id\n" +
+                "SELECT T1.*" + '\n' +
+                        "FROM developer AS T1" + '\n' +
+                        "JOIN developer_skill AS T2 ON T1.id=T2.developer_id" + '\n' +
+                        "JOIN skill AS T3 ON T2.skill_id=T3.id" + '\n' +
+                        "GROUP BY T3.skill_level , T1.id" + '\n' +
                         "HAVING T3.skill_level = ?"
         );
     }

@@ -57,32 +57,32 @@ public class ProjectDaoService {
         );
 
         updateCostByIdSt = connection.prepareStatement(
-                "UPDATE project AS T1\n" +
-                        "SET T1.cost = (\n" +
-                        "    SELECT SUM(salary)\n" +
-                        "    FROM developer AS T2\n" +
-                        "    WHERE T2.id IN (\n" +
-                        "        SELECT T3.developer_id\n" +
-                        "        FROM project_developer AS T3\n" +
-                        "        WHERE T3.project_id=T1.id\n" +
-                        "    )\n" +
+                "UPDATE project AS T1" + '\n' +
+                        "SET T1.cost = (" + '\n' +
+                        "    SELECT SUM(salary)" + '\n' +
+                        "    FROM developer AS T2" + '\n' +
+                        "    WHERE T2.id IN (" + '\n' +
+                        "        SELECT T3.developer_id" + '\n' +
+                        "        FROM project_developer AS T3" + '\n' +
+                        "        WHERE T3.project_id=T1.id" + '\n' +
+                        "    )" + '\n' +
                         ")" +
                         "WHERE id = ?;"
         );
 
         getDevelopersByProjectIdSt = connection.prepareStatement(
-                "SELECT T3.*\n" +
-                        "FROM project AS T1\n" +
-                        "JOIN project_developer AS T2 ON T1.id=T2.project_id\n" +
-                        "JOIN developer AS T3 ON T2.developer_id=T3.id\n" +
-                        "GROUP BY T3.id, T1.id\n" +
+                "SELECT T3.*" + '\n' +
+                        "FROM project AS T1" + '\n' +
+                        "JOIN project_developer AS T2 ON T1.id=T2.project_id" + '\n' +
+                        "JOIN developer AS T3 ON T2.developer_id=T3.id" + '\n' +
+                        "GROUP BY T3.id, T1.id" + '\n' +
                         "HAVING T1.id = ?;"
         );
 
         getAllBySpecialFormatSt = connection.prepareStatement(
-                "SELECT T1.creation_date, T1.name, COUNT(T2.project_id) AS developer_count\n" +
-                        "FROM project AS T1\n" +
-                        "JOIN project_developer AS T2 ON T1.id=T2.project_id\n" +
+                "SELECT T1.creation_date, T1.name, COUNT(T2.project_id) AS developer_count" + '\n' +
+                        "FROM project AS T1" + '\n' +
+                        "JOIN project_developer AS T2 ON T1.id=T2.project_id" + '\n' +
                         "GROUP BY T1.name"
         );
     }

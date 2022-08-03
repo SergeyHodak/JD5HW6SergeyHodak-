@@ -5,11 +5,11 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>ProjectDeveloper delete</title>
 </head>
 <body>
     <h2>Fill out the form to remove the dependency, then click on the "Delete" button.</h2>
-    <form  action="/app/table/project-developer/delete" method="post">
+    <form  action="/project-developer/delete" method="post">
         <p>ProjectId = <input type="text" value="" name="setProjectId" id="setProjectId"></p>
         <p>DeveloperId = <input type="text" value="" name="setDeveloperId" id="setDeveloperId"></p>
         <button type="submit">Delete</button>
@@ -18,7 +18,7 @@
     <h4 style="color:#00ff00" th:if="${errorMessage} == 'true'" th:text="${errorMessage}"></h4>
     <h4 style="color:#ff0000" th:if="${errorMessage.length()} > 4" th:text="'Error: ' + ${errorMessage}"></h4>
     <br>
-    <form action="/app/table/project-developer" method="get">
+    <form action="/project-developer" method="get">
         <button type="submit">back</button>
     </form>
 </body>

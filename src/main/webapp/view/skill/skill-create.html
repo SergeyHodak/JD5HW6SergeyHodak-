@@ -5,11 +5,11 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Skill create</title>
 </head>
 <body>
     <h2>Complete the form to create a new skill record.</h2>
-    <form  action="/app/table/skill/create" method="post">
+    <form  action="/skill/create" method="post">
         <p>Department = <input type="text" value="" name="setDepartment" id="setDepartment"></p>
         <p>SkillLevel = <input type="text" value="" name="setSkillLevel" id="setSkillLevel"></p>
         <button type="submit">Create</button>
@@ -18,7 +18,7 @@
     <h4 style="color:#00ff00" th:if="${skillId} != ''" th:text="'Result: ' + ${skillId}"></h4>
     <h4 style="color:#ff0000" th:if="${errorMessage} != ''" th:text="'Error: ' + ${errorMessage}"></h4>
     <br>
-    <form action="/app/table/skill" method="get">
+    <form action="/skill" method="get">
         <button type="submit">back</button>
     </form>
 </body>

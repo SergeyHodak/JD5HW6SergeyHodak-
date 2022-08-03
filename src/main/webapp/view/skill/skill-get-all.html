@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Skill getAll</title>
 </head>
 <body>
     <style>
@@ -14,7 +14,7 @@
         }
     </style>
     <h2>Click on the "get" button to get all skill records.</h2>
-    <form  action="/app/table/skill/get-all" method="post">
+    <form  action="/skill/get-all" method="post">
         <button type="submit">Get</button>
     </form>
     <br>
@@ -42,7 +42,7 @@
     </div>
     <h4 style="color:#ff0000" th:if="${errorMessage} != ''" th:text="'Error: ' + ${errorMessage}"></h4>
     <br>
-    <form action="/app/table/skill" method="get">
+    <form action="/skill" method="get">
         <button type="submit">back</button>
     </form>
 </body>

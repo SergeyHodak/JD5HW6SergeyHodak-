@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>ProjectDeveloper getAllByDeveloperId</title>
 </head>
 <body>
     <style>
@@ -14,7 +14,7 @@
         }
     </style>
     <h2>Fill out the form and click the Get button to get all project developer dependencies by developer ID.</h2>
-    <form  action="/app/table/project-developer/get-all-by-developer-id" method="post">
+    <form  action="/project-developer/get-all-by-developer-id" method="post">
         <p>DeveloperId = <input type="text" value="" name="setDeveloperId" id="setDeveloperId"></p>
         <button type="submit">GetAllByDeveloperId</button>
     </form>
@@ -41,7 +41,7 @@
     </div>
     <h4 style="color:#ff0000" th:if="${errorMessage} != ''" th:text="'Error: ' + ${errorMessage}"></h4>
     <br>
-    <form action="/app/table/project-developer" method="get">
+    <form action="/project-developer" method="get">
         <button type="submit">back</button>
     </form>
 </body>

@@ -9,9 +9,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.File;
 import java.io.IOException;
-import java.util.Objects;
 
 @WebServlet("/")
 public class TableController extends HttpServlet {
@@ -24,10 +22,8 @@ public class TableController extends HttpServlet {
 
         engine = new TemplateEngine();
 
-        String urlProject = getServletContext().getRealPath("").replace('\\', '/');
-
         FileTemplateResolver resolver = new FileTemplateResolver();
-        resolver.setPrefix(urlProject + "view/");
+        resolver.setPrefix(getServletContext().getRealPath("") + "view/");
         resolver.setSuffix(".html");
         resolver.setTemplateMode("HTML5");
         resolver.setOrder(engine.getTemplateResolvers().size());
